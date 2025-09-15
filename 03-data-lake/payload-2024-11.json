@@ -1,13 +1,13 @@
 {
     "sparkSubmit": {
-        "entryPoint": "s3://ztm-data-engineering-bootcamp/apps/reviews-per-listing.py",
+        "entryPoint": "s3://ztm-data-engineering-bootcamp-bucket/apps/reviews-per-listing.py",
         "entryPointArguments": [
             "--listings",
-            "s3://ztm-data-engineering-bootcamp/listings/date=2024-11/listings.csv.gz",
+            "s3://ztm-data-engineering-bootcamp/listings-bucket/date=2024-11/listings.csv.gz",
             "--reviews",
-            "s3://ztm-data-engineering-bootcamp/reviews/date=2024-11/reviews.csv.gz",
+            "s3://ztm-data-engineering-bootcamp-bucket/reviews/date=2024-11/reviews.csv.gz",
             "--output",
-            "s3://ztm-data-engineering-bootcamp/reviews_per_listing/date=2024-11"
+            "s3://ztm-data-engineering-bootcamp-bucket/reviews_per_listing/date=2024-11"
         ]
     }
 }
